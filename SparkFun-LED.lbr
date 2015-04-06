@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.00001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -754,6 +754,7 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <circle x="-1.1" y="-0.4" radius="0.1" width="0.2032" layer="21"/>
 <text x="-1.2" y="2.45" size="0.508" layer="25">&gt;Name</text>
 <text x="-1.3" y="-3.1" size="0.508" layer="27">&gt;Value</text>
+<circle x="-2.0398" y="-1.2636" radius="0.1" width="0.2032" layer="21"/>
 </package>
 <package name="LTST-C195KGJRKT">
 <smd name="P$1" x="0.425" y="0.725" dx="0.65" dy="0.85" layer="1"/>
@@ -2174,7 +2175,7 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED-TRICOLOR-NO-COM">
+<deviceset name="LED-TRICOLOR-NO-COM" prefix="LED">
 <gates>
 <gate name="G$1" symbol="LED-TRICOLOR-SMD" x="0" y="0"/>
 </gates>
