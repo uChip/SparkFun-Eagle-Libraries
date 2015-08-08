@@ -1493,6 +1493,8 @@ Source: RS Components</description>
 <wire x1="5.5" y1="-3.5" x2="5.5" y2="-1.5" width="0.2032" layer="21"/>
 <wire x1="-5.5" y1="-5.5" x2="-5.5" y2="-1.5" width="0.2032" layer="21"/>
 <wire x1="-5.5" y1="1.5" x2="-5.5" y2="5.5" width="0.2032" layer="21"/>
+<text x="-3.175" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="CAP-311-VA6R">
 <smd name="1" x="-1.75" y="0" dx="2" dy="0.9" layer="1" rot="R90"/>
@@ -2088,8 +2090,21 @@ Standard decoupling cap</description>
 <deviceset name="0.33UF-50V-10%(0805)" prefix="C" uservalue="yes">
 <description>CAP-08469</description>
 <gates>
+<gate name="G$1" symbol="CAP" x="0" y="-2.54"/>
 </gates>
 <devices>
+<device name="" package="0805-CAP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-08469" constant="no"/>
+<attribute name="VALUE" value="0.33uF" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="0.33UF-50V-10%(TANT)" prefix="C" uservalue="yes">
@@ -2152,16 +2167,13 @@ Standard decoupling cap</description>
 <gate name="G$1" symbol="CAP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="1206">
+<device name="" package="1206-CAP">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-09822"/>
-<attribute name="VALUE" value="1.0uF"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -2763,16 +2775,13 @@ Ceramic&lt;br&gt;</description>
 <gate name="G$1" symbol="CAP" x="0" y="-1.27"/>
 </gates>
 <devices>
-<device name="" package="1206">
+<device name="" package="1206-CAP">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-10009" constant="no"/>
-<attribute name="VALUE" value="2.2UF" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -2943,8 +2952,21 @@ Ceramic&lt;BR&gt;</description>
 <deviceset name="330PF-25V-10%-(0603)" prefix="C" uservalue="yes">
 <description>CAP-10108</description>
 <gates>
+<gate name="G$1" symbol="CAP" x="0" y="0"/>
 </gates>
 <devices>
+<device name="" package="0603-CAP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-10108" constant="no"/>
+<attribute name="VALUE" value="330pF" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="33NF-50V-10%(0603)" prefix="C" uservalue="yes">

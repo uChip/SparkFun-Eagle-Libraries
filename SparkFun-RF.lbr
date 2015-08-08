@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8724,7 +8724,7 @@ Used by ESP8266.</description>
 <circle x="-2.7" y="2.7" radius="0.15" width="0" layer="21"/>
 </package>
 <package name="TRACE_ANTENNA_2.4GHZ_25.7MM">
-<polygon width="0" layer="1">
+<polygon width="0.002540625" layer="1">
 <vertex x="-0.23" y="0"/>
 <vertex x="-0.23" y="2.28"/>
 <vertex x="-0.73" y="2.69"/>
@@ -14914,7 +14914,9 @@ Hyper-competent Bluetooth 4.0 module, with:&lt;br&gt;
 <connect gate="G$1" pin="SCK" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-11997, IC-12053" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="W" package="RFM69W-XXXS2">
