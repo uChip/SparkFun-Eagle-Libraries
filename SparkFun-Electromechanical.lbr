@@ -12619,7 +12619,9 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <connect gate="1" pin="S" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="SWCH-10651"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -13315,7 +13317,7 @@ CTS series 219</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="2-POS-DIP">
+<deviceset name="2-POS-DIP" prefix="S">
 <description>SMD dip switch 2 positions</description>
 <gates>
 <gate name="G$1" symbol="2-POS-DIP" x="0" y="0"/>
