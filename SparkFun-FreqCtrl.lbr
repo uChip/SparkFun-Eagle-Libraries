@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -361,7 +361,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-5.08" y="-3.937" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-5.08" y="2.667" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 </package>
-<package name="CRYSTAL-32KHZ-SMD">
+<package name="CRYSTAL-32KHZ-SMD-MELF">
 <smd name="X1" x="-1.27" y="0" dx="1" dy="2.5" layer="1"/>
 <smd name="X2" x="1.27" y="0" dx="1" dy="2.5" layer="1"/>
 <smd name="SHEILD" x="0" y="5.08" dx="2.5" dy="6" layer="1"/>
@@ -1233,7 +1233,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <technology name=""/>
 </technologies>
 </device>
-<device name="32-SMD" package="CRYSTAL-32KHZ-SMD">
+<device name="32-SMD-MELF" package="CRYSTAL-32KHZ-SMD-MELF">
 <connects>
 <connect gate="G$1" pin="1" pad="X1"/>
 <connect gate="G$1" pin="2" pad="X2"/>
@@ -1244,7 +1244,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 </technology>
 </technologies>
 </device>
-<device name="5X3" package="CRYSTAL-SMD-5X3">
+<device name="CRYSTAL-SMD-5X3-16MHZ" package="CRYSTAL-SMD-5X3">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="3"/>
@@ -1299,6 +1299,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="XTAL-09653" constant="no"/>
+<attribute name="VALUE" value="12.288MHz"/>
 </technology>
 </technologies>
 </device>
@@ -1309,6 +1310,18 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="CRYSTAL-SMD-5X3-12MHZ" package="CRYSTAL-SMD-5X3">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-08297"/>
+<attribute name="VALUE" value="12MHz"/>
+</technology>
 </technologies>
 </device>
 </devices>
