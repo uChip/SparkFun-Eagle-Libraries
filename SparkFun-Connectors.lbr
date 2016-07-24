@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -17814,7 +17814,6 @@ Reduced openings in tStop, pins spread a tiny bit out to hold part on PCB during
 <wire x1="28.575" y1="1.27" x2="27.94" y2="0.635" width="0.2032" layer="21"/>
 <wire x1="28.575" y1="1.27" x2="29.845" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="29.845" y1="1.27" x2="30.48" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="30.48" y1="-0.635" x2="29.845" y2="-1.27" width="0.2032" layer="21"/>
 <wire x1="29.845" y1="-1.27" x2="28.575" y2="-1.27" width="0.2032" layer="21"/>
 <wire x1="27.94" y1="-0.635" x2="28.575" y2="-1.27" width="0.2032" layer="21"/>
 <wire x1="30.48" y1="0.635" x2="30.48" y2="-0.635" width="0.2032" layer="21"/>
@@ -17866,7 +17865,9 @@ Reduced openings in tStop, pins spread a tiny bit out to hold part on PCB during
 <rectangle x1="21.336" y1="-0.254" x2="21.844" y2="0.254" layer="51"/>
 <rectangle x1="23.876" y1="-0.254" x2="24.384" y2="0.254" layer="51"/>
 <rectangle x1="26.416" y1="-0.254" x2="26.924" y2="0.254" layer="51"/>
+<rectangle x1="26.416" y1="-0.254" x2="26.924" y2="0.254" layer="51"/>
 <rectangle x1="28.956" y1="-0.254" x2="29.464" y2="0.254" layer="51"/>
+<wire x1="30.48" y1="-0.635" x2="29.845" y2="-1.27" width="0.2032" layer="21"/>
 </package>
 <package name="1X23_LONGPADS">
 <wire x1="33.02" y1="0.635" x2="33.02" y2="-0.635" width="0.2032" layer="21"/>
@@ -23008,7 +23009,6 @@ Reduced openings in tStop, pins spread a tiny bit out to hold part on PCB during
 <wire x1="1.27" y1="17.78" x2="2.54" y2="17.78" width="0.6096" layer="94"/>
 <wire x1="1.27" y1="20.32" x2="2.54" y2="20.32" width="0.6096" layer="94"/>
 <wire x1="1.27" y1="22.86" x2="2.54" y2="22.86" width="0.6096" layer="94"/>
-<wire x1="1.27" y1="25.4" x2="2.54" y2="25.4" width="0.6096" layer="94"/>
 <text x="-2.54" y="-35.56" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-2.54" y="28.702" size="1.778" layer="95">&gt;NAME</text>
 <pin name="2" x="7.62" y="-30.48" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
@@ -30681,7 +30681,9 @@ Pogo pins- HW-11044</description>
 <connect gate="G$1" pin="TIP" pad="TIP"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-10676"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -31345,7 +31347,7 @@ NOTE: CD1 and CD2 are connected internally</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="USB-MICROB">
+<deviceset name="USB-MICROB" prefix="J">
 <gates>
 <gate name="G$1" symbol="USB-MICROB" x="0" y="0"/>
 </gates>
@@ -31367,7 +31369,7 @@ NOTE: CD1 and CD2 are connected internally</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="USD-SDIO-SOCKET" prefix="JP">
+<deviceset name="USD-SDIO-SOCKET" prefix="J">
 <description>microSD Socket
 &lt;br&gt;&lt;br&gt;
 Push-push type uSD socket with full SDIO signal mapping. Spark Fun Electronics SKU : PRT-00127. tDoc lines correctly indicate media card edge positions when inserting (unlocked, locked, depressed). NOTE: CD1 and CD2 are connected internally, and short to ground when card is removed.</description>
